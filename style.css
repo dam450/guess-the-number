@@ -1,0 +1,117 @@
+:root {
+  /* ========== resetting ========== */
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+
+  /* ========== color variables ========== */
+  --bg-color-01: #C2E9FB;
+  --bg-color-02: #A1C4FD;
+  --font-primary-color: #34355b;
+  --button-bg-color: #7879F1;
+  --button-fg-color: #FFFFFF;
+}
+
+html {
+  font-size:  1.6rem;
+}
+
+body, button, input {
+  font-family: 'DM Sans', sans-serif;
+
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+
+  background: linear-gradient(287.56deg, var(--bg-color-01) 0%, var(--bg-color-02) 100%);
+}
+
+main {
+  margin-top: -15rem;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  margin: 0 0  1.6rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 150%;
+  margin: 0 0  3.3rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  opacity: 0.8;
+  margin: 0 0  4.8rem;
+
+}
+
+button {
+  color: var(--button-fg-color);
+  background: var(--button-bg-color);
+
+  border-radius: .4rem;
+  border: transparent;
+  padding: 1.6rem;
+
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 3rem;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  opacity: 1;
+  transition: all 150ms ease;
+}
+
+.hide {
+  height: 0;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  
+  /* display: none; */
+  opacity: 0;
+  transform: skew(45deg, 15deg);
+
+}
+
+#guess-box {
+  display: flex;
+}
+
+#guess-box input {
+  background: #DCE2E9;
+  border: 0;
+  border-radius: 4px 0px 0px 4px;
+  text-align: center;
+  width: 4.3rem;
+}
+
+#guess-box button{
+  border-radius: 0px 4px 4px 0px;
+
+}
